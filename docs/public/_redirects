@@ -1,0 +1,6 @@
+# Cloudflare Pages Redirects
+# 不设置将所有路径回退到首页的 SPA 规则，确保 404.html 正常返回 404 状态
+/home / 301
+/clash-verge /clash/verge 301
+/clash-verge-rev /clash/verge 301
+/brand /brands/ 301

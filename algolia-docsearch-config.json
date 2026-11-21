@@ -1,0 +1,31 @@
+{
+  "index_name": "jichangios_cc",
+  "start_urls": [
+    "https://jichangios.cc/"
+  ],
+  "sitemap_urls": [
+    "https://jichangios.cc/sitemap.xml"
+  ],
+  "stop_urls": [
+    "https://jichangios.cc/404",
+    "https://jichangios.cc/drafts/"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": ".VPNavBarMenuLink.active, .kb-breadcrumbs a:nth-child(3)",
+      "default_value": "机场苹果知识库"
+    },
+    "lvl1": ".vp-doc h1, .kh-h1",
+    "lvl2": ".vp-doc h2",
+    "lvl3": ".vp-doc h3",
+    "text": ".vp-doc p, .vp-doc li, .vp-doc td"
+  },
+  "custom_settings": {
+    "attributesForFaceting": [
+      "type",
+      "lang"
+    ],
+    "indexLanguages": ["zh"],
+    "queryLanguages": ["zh"]
+  }
+}

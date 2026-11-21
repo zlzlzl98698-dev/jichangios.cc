@@ -1,0 +1,22 @@
+{
+  "name": "jichangios-cc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "机场苹果 (jichangios.cc) - 中文网络工具知识库、Clash 客户端教程中心与独立机场评测平台",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "typecheck": "tsc --noEmit",
+    "validate:site": "esbuild scripts/validate-site.ts --bundle --platform=node --format=esm --outfile=node_modules/.cache/validate-site.mjs && node node_modules/.cache/validate-site.mjs"
+  },
+  "dependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}
